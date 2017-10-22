@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Tarantino Twist Show</title>
+    <meta name="description" content="The Tarantino Twist Show is a Danish group exploring the Tarantino universe through music and performance.
+Come along on a journey through the iconic soundtracks of movies such as
+The Hateful Eight, Django Unchained, and classics like Pulp Fiction and Dusk Till Dawn.
+The music is played by the wonderful surf rockers Django and the Suckerpunch Band.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400|Khand:500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header id="header" class="big">
+        <div class="wrapper">
+            <a href="#">
+                <h1>The Tarantino Twist Show</h1>
+            </a>
+            <div id="logo">
+                <a href="#"><img src="images/logo_hvid.png"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="bioLink" href="#bio">Meet The Gang</a></li>
+                    <li><a id="galleryLink" href="#gallery">Gallery</a></li>
+                    <li><a id="contactLink" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="top">
+            <div class="wrapper">
+                <div class="hero">
+                    <div class="quote">
+                        <span>Bad Girls, Mad Men<br> & Good Times</span>
+                        <p>- The Tarantino Twist Show</p>
+                    </div>
+                    <button onclick="showVideo()">Watch our video!</button>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/tarantinotwist16/" target="_blank"><img src="images/facebook.png" alt="Link to Facebook"></a>
+                    <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="Link to Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Link to Youtube"></a>
+                </div>
+            </div>
+            <video src="images/baggrundsvideo.mp4" autoplay loop></video>
+        </section>
+
+        <section id="bio">
+            <div class="wrapper">
+                <h2>Meet The Gang</h2>
+                <p>Forestil dig et varmt og diset ørkenlandskab, kaktus og glohedt sand. En rygende revolver og et skælmsk blik under en cowboyhat. Saloonen er indhyllet i røgen af krudt. En flaske whisky klirrer på bordet i takt til musikken fra bandet og stemmen fra en forførende sangerinde. Tonen fra en hæs saxofon spiller op til den dansende og uimodståelige Femme Fatale, mens en vibrerende Fenderguitar hviner og sender drømme ud i natklubbens mørke.</p>
+
+                <div class="characters">
+                    <div>
+                        <img src="images/django.png" alt="Picture of Django and the Suckerpunch Surfband">
+                    </div>
+                    <div>
+                        <img src="images/blixen.png" alt="Picture of Scarlet Blixen">
+                    </div>
+                    <div>
+                        <img src="images/madhorn.png" alt="Picture of The Texas Madhorn">
+                    </div>
+                    <div>
+                        <img src="images/sam.png" alt='Miss "Saint" Sam'>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="bigImage1" class="bigImage"></section>
+
+        <section id="gallery">
+            <div class="wrapper">
+                <h2>Gallery</h2>
+                <div id="galleryContainer">
+                    <div id="row1" class="row"></div>
+                    <div id="row2" class="row"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bigImage2" class="bigImage"></section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <div class="formContainer">
+                    <form id="contactForm" action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="What's your name?" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="What's your email?" required>
+
+                        <label for="message"></label>
+                        <textarea id="message" name="message" rows="4" placeholder="What's your message?" required></textarea>
+
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/tarantinotwist16/" target="_blank"><img src="images/facebook.png" alt="Link to Facebook"></a>
+                    <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="Link to Instagram"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="Link to Youtube"></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="copyright">
+                    &copy; The Tarantino Twist Show 2017
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div id="modal" class="hidden">
+        <div id="close">&times;</div>
+        <span></span>
+    </div>
+
+    <div id="videoModal" class="hidden">
+        <div id="videoClose">&times;</div>
+        <iframe id="video" width="853" height="480" src="https://www.youtube.com/embed/63OBubcbvtQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
